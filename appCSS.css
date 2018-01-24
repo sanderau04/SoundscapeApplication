@@ -6,6 +6,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
 }
 .t2{
     background: url(../backgroundImg/02_00.jpg) no-repeat center center fixed; 

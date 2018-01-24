@@ -2,6 +2,17 @@
 
 <html>
     <head>
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111038509-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-111038509-1');
+        </script>
         <title>The Woods: About</title>
         <meta charset="utf-8">
         <meta name="author" content="Steve Anderau">
@@ -36,13 +47,16 @@
         <h2>Current Features of the app (12/8)</h2>
         <p>
             The current prototype application plays a full 24 hours of nature sounds specific to your time of day, down to the second. The audio is played
-            in one hour segments, refreshing at the top of every hour. The background also changes every hour, its colors resembling the time of day.
+            in one hour segments, refreshing at the top of every hour. The background also changes every hour, its colors resembling the time of day.<br><br>
+            NOTE: Please only use this app over wifi, audio streaming can cost a lot of data :)
         </p>
         
         <h2>Current Bugs (12/8)</h2>
-        <p>
-            The refreshing feature does not seem to work half the time. At the top of the hour, the page will refresh but the new audio segment will not 
-            start from the beginning. In this case, just manually refresh your page and everything should get synced up :)<br>
-            Want more info? Check out <a href="../sitemap.php">this link</a>
-        </p>
+        <ul class="bugs">
+            <li>The refreshing feature does not seem to work half the time. At the top of the hour, the page will refresh but the new audio segment will not 
+                start from the beginning. In this case, just manually refresh your page and everything should get synced up :)</li>
+            <li>The audio is not the highest quality and will often sound like ass (especially when a plane goes by). 
+                I had to compress the audio from the raw recording to make streaming tangible</li>
+            <li>Want more info? Check out <a href="../sitemap.php">this link</a></li>
+        </ul>
     </body>
